@@ -50,21 +50,21 @@ node scripts/preview.mjs
 
 ## 购买域名后的必做步骤
 
-目前还没有实际域名，以下 **8 个文件中的 13 处** 使用 `https://example.com`：
+目前使用 https://blooketpractice-site.vercel.app/，以下 **8 个文件中的 13 处** 已统一使用该地址；购买并绑定自己的域名后，需要再次更新：
 
 1. `site/index.html`、`join.html`、`help.html`、`solo.html`、`about.html`、`privacy.html`：每页一处 canonical，共 6 处。
 2. `site/sitemap.xml`：六个页面地址，共 6 处。
 3. `site/robots.txt`：Sitemap 地址，共 1 处。
 
-全部换成实际的 HTTPS 主域名，保留各页面的 `.html` 路径，再上传并重新部署。**购买域名前不要向 Google 提交示例域名的站点地图。** 不需要替换 Blooket 官方链接。文档中的演示域名可以保留。
+全部换成实际的 HTTPS 主域名，保留各页面的 `.html` 路径，再上传并重新部署。不需要替换 Blooket 官方链接。文档中的演示域名可以保留。
 
 在 PowerShell 中可运行下面的检查，列出尚未替换的位置：
 
 ```powershell
-Get-ChildItem site -Recurse -File | Select-String 'https://example.com'
+Get-ChildItem site -Recurse -File | Select-String 'https://blooketpractice-site.vercel.app'
 ```
 
-域名绑定后，按部署文档验证 Google Search Console 并提交真实的站点地图。收录和排名留作后续观察。
+当前 Vercel 地址可先用 Google Search Console 的 URL prefix 和 HTML tag 验证，再提交站点地图。首页已加入用户提供的验证标记，需保留。收录和排名留作后续观察。
 
 ## 开发验证
 
@@ -84,4 +84,4 @@ node --check scripts/preview.mjs
 - [Vercel、域名和 Google 提交步骤](docs/blooket-deployment-guide.md)
 - [实现与验证记录](docs/implementation-verification.md)
 
-本地实现已推送到 https://github.com/xinyaoliao93/blooket_practice。Vercel 正式部署、域名购买绑定、Google 验证与站点地图提交尚未执行。
+代码仓库：https://github.com/xinyaoliao93/blooket_practice。网站已部署到 https://blooketpractice-site.vercel.app/。自购域名绑定、Google 所有权验证成功和站点地图提交仍待确认，详见 progress.md。

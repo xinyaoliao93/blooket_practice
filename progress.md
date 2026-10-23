@@ -12,7 +12,7 @@
 - 技术：静态 HTML、CSS、原生 JavaScript。
 - 不做账号、数据库、密码输入、游戏房间、成绩、广告、统计、AI 接口。
 - 发布目录：site/。
-- 临时域名：example.com；购买真实域名后必须替换正式地址。
+- 当前公开地址：https://blooketpractice-site.vercel.app/。自购域名尚未绑定，以后更换主地址时需同步更新 canonical、sitemap 和 robots。
 - Vercel 设置：Other；Root Directory 为 site；Build Command 留空；Output Directory 为 .
 
 ## 已完成
@@ -59,12 +59,23 @@ https://github.com/xinyaoliao93/blooket_practice.git
 
 ## 上传后待办
 
-1. 按部署文档从 GitHub 仓库导入 Vercel。
-2. 购买并绑定真实域名。
-3. 用真实域名替换 6 个 HTML canonical、sitemap.xml 六条地址、robots.txt 一条 Sitemap 地址，共 13 处。
-4. 验证 Google Search Console。
-5. 提交真实域名的 sitemap.xml。
+1. 本次修改提交并推送后，检查 Vercel 自动部署和线上首页验证标记。
+2. 在 Google Search Console 的 HTML tag 验证方式中点击 Verify，等待明确显示所有权已验证。
+3. 提交 https://blooketpractice-site.vercel.app/sitemap.xml，并记录提交状态。
+4. 购买并绑定自己的域名仍是原练习的未完成项；更换主地址后同步更新网站地址，并为新地址重新验证和提交站点地图。
+
+## Google Search Console 配置（2026-10-23）
+
+- 用户已在 Vercel 部署网站，提供公开地址 https://blooketpractice-site.vercel.app/。
+- 最初选择网域验证得到 DNS TXT；Vercel 免费子域名没有可供用户管理的 DNS，因此改用 URL prefix / 网址前缀。
+- 当前要验证的资源：https://blooketpractice-site.vercel.app/。
+- 用户提供 HTML tag，已加入 site/index.html 的 head，content 为 IyDOPsGvb1YDGFn4wCDl2Y3a9_xPfkji77vBAiMre4w。验证成功后仍需保留标记。
+- 未把之前的 DNS TXT 内容写成网站文件，也不需要下载 HTML 验证文件。
+- 六个页面 canonical、六条 sitemap 地址和 robots 的 Sitemap 地址共 13 处已由 example.com 换成当前 Vercel 地址。
+- 已补充部署文档中的免费 Vercel 地址验证路线。
+- 本次检查：现有 5/5 测试通过，帮助脚本和预览脚本语法检查通过；首页 head 中仅有一个 Google 验证标记且内容一致，发布目录不再包含 https://example.com；git diff --check 通过。
+- 当前尚未确认 Google 所有权验证成功，也未确认站点地图已提交；不能把本次添加代码视为 Google 已验证。
 
 ## 重要信息
 
-不要把密码、验证码、恢复码或付款信息写进仓库或进度文件。当前没有真实域名、Vercel 项目地址或 Search Console 验证记录。
+不要把密码、登录验证码、恢复码或付款信息写进仓库或进度文件。Google 网站验证 meta 标记是公开网页的一部分，不是账号密码。GitHub 登录或授权若被要求，停止并告知用户自行登录。

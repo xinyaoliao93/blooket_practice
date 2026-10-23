@@ -10,7 +10,7 @@
 - 帮助页没有脚本时仍显示四个问题的文字建议和相关官方链接。
 - 问题结果只显示当前分支；选择结果后标题获得焦点；返回选择后焦点回到原按钮；刷新会回到第一步。
 - 没有加入账号、数据库、密码输入、统计、广告、外部脚本或 Blooket 数据请求。
-- `example.com` 仍是临时域名示例；购买真实域名后按部署文档替换 13 处正式站点地址。
+- 网站地址已由示例 example.com 更新为 https://blooketpractice-site.vercel.app/，覆盖六个 canonical、六条站点地图网址和 robots 的 Sitemap 地址；首页加入用户提供的 Google HTML 验证标记。Google 验证结果仍待确认。
 
 ## 自动检查
 
@@ -54,7 +54,7 @@ node --check scripts/preview.mjs
 
 ## 尚未执行
 
-- Vercel 正式部署。
+- 本次验证标记更新后的 Vercel 线上检查（检查结果记录在 progress.md）。
 - 购买和绑定真实域名。
 - 用真实域名验证 Google Search Console。
 - 向 Google 提交真实站点地图。

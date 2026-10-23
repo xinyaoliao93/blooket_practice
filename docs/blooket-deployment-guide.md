@@ -288,6 +288,18 @@ https://你的实际域名/robots.txt
 
 ## 8. 验证 Google Search Console
 
+### 当前 Vercel 免费地址的操作路线
+
+当前网站是 https://blooketpractice-site.vercel.app/。可以先完成此地址的 Google 验证；自购域名绑定仍需另行完成。
+
+1. 添加资源时，选择右边的 **URL prefix / 网址前缀**，完整输入 `https://blooketpractice-site.vercel.app/`，包含 `https://`。
+2. 点击继续，在其他验证方式里展开 **HTML tag / HTML 标记**。
+3. 首页 head 已加入用户提供的 meta 标记。将更新推送 GitHub 后，等待 Vercel 自动部署完成并确认线上标记存在。
+4. 回到 **HTML tag** 这一栏点击 **Verify / 验证**，以 Google 明确显示所有权已验证为准。验证后保留首页标记。
+5. 按第 9 节提交 `https://blooketpractice-site.vercel.app/sitemap.xml`。如果输入框已显示网站前半段，只填 `sitemap.xml`。
+
+免费 Vercel 子域名不能由用户添加 Google 要求的 DNS TXT。不要将 DNS TXT 内容保存为网站文件代替验证。下方 8.1、8.2 是以后购买自己的域名、能够管理 DNS 时使用的路线。
+
 ### 8.1 添加域名
 
 1. 打开 [Google Search Console](https://search.google.com/search-console/)，登录自己的 Google 账号。
