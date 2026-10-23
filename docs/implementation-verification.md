@@ -54,7 +54,6 @@ node --check scripts/preview.mjs
 
 ## 尚未执行
 
-- GitHub 仓库创建或上传。
 - Vercel 正式部署。
 - 购买和绑定真实域名。
 - 用真实域名验证 Google Search Console。

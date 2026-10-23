@@ -84,4 +84,4 @@ node --check scripts/preview.mjs
 - [Vercel、域名和 Google 提交步骤](docs/blooket-deployment-guide.md)
 - [实现与验证记录](docs/implementation-verification.md)
 
-目前完成本地实现。GitHub 发布、Vercel 正式部署、域名购买绑定、Google 验证与站点地图提交尚未执行。
+本地实现已推送到 https://github.com/xinyaoliao93/blooket_practice。Vercel 正式部署、域名购买绑定、Google 验证与站点地图提交尚未执行。

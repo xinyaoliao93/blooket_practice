@@ -50,21 +50,20 @@ https://github.com/xinyaoliao93/blooket_practice.git
 - 本地初始化 Git 仓库，分支为 main。
 - 创建 .gitignore。
 
-尚未完成：
+已完成：
 
-- 本地 Git 首次提交。
+- 本地 Git 首次提交：117ff47 feat: add ClassPlay Blooket student guide。
 - 添加 GitHub remote。
-- 推送到 GitHub。
-- 如出现 GitHub 登录、验证码或网页登录授权，必须停下来让用户完成登录后再继续。
+- 推送到 GitHub 的 main 分支，远程提交：117ff47bae2dc8540861769f846c8432f39debd4。
+- 推送过程没有要求网页登录、验证码或额外授权。
 
 ## 上传后待办
 
-1. 打开 GitHub 仓库确认文件。
-2. 按部署文档导入 Vercel。
-3. 购买并绑定真实域名。
-4. 用真实域名替换 6 个 HTML canonical、sitemap.xml 六条地址、robots.txt 一条 Sitemap 地址，共 13 处。
-5. 验证 Google Search Console。
-6. 提交真实域名的 sitemap.xml。
+1. 按部署文档从 GitHub 仓库导入 Vercel。
+2. 购买并绑定真实域名。
+3. 用真实域名替换 6 个 HTML canonical、sitemap.xml 六条地址、robots.txt 一条 Sitemap 地址，共 13 处。
+4. 验证 Google Search Console。
+5. 提交真实域名的 sitemap.xml。
 
 ## 重要信息
 
