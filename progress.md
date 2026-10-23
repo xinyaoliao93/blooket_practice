@@ -54,7 +54,7 @@ https://github.com/xinyaoliao93/blooket_practice.git
 
 - 本地 Git 首次提交：117ff47 feat: add ClassPlay Blooket student guide。
 - 添加 GitHub remote。
-- 推送到 GitHub 的 main 分支，远程提交：117ff47bae2dc8540861769f846c8432f39debd4。
+- 初始网站提交已推送到 GitHub 的 main 分支：117ff47bae2dc8540861769f846c8432f39debd4；随后进度说明更新提交为 04e8a145db5fff61b7a9b232d47ca7566823a1fd。
 - 推送过程没有要求网页登录、验证码或额外授权。
 
 ## 上传后待办
