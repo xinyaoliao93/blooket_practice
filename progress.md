@@ -74,6 +74,7 @@ https://github.com/xinyaoliao93/blooket_practice.git
 - 六个页面 canonical、六条 sitemap 地址和 robots 的 Sitemap 地址共 13 处已由 example.com 换成当前 Vercel 地址。
 - 已补充部署文档中的免费 Vercel 地址验证路线。
 - 本次检查：现有 5/5 测试通过，帮助脚本和预览脚本语法检查通过；首页 head 中仅有一个 Google 验证标记且内容一致，发布目录不再包含 https://example.com；git diff --check 通过。
+- 线上检查：Vercel 首页已公开返回相同的 Google 验证标记和 canonical；线上 sitemap.xml 已公开返回当前 Vercel 地址下的 6 个页面。
 - 当前尚未确认 Google 所有权验证成功，也未确认站点地图已提交；不能把本次添加代码视为 Google 已验证。
 
 ## 重要信息
